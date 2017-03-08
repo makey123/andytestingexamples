@@ -1,0 +1,98 @@
+/* red CTA button medium */
+
+    .trigger {
+    width: auto;
+    height: auto;
+    position: relative;
+    }
+    .linkBoxMediumRed {
+    display: inline-block;
+    background-color: #E7343F;
+    width: auto;
+    height: 50px;
+    line-height: 50px;
+    transition: transform 300ms ease-in-out;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 70px;
+    position: relative;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #fff;
+    font-family: "Neo Sans W01 Medium",sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    }
+    .mArrowLink {
+    background-color: #E7343F;
+    height: 46px;
+    width: 48px;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    -webkit-border-top-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    -moz-border-radius-topright: 2px;
+    -moz-border-radius-bottomright: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    }
+    .mAngleBottom {
+    height: 11px;
+    width: 0;
+    border-right: 3px solid #FEC700;
+    -moz-transform: skew(-45deg);
+    -webkit-transform: skew(-45deg);
+    transform: skew(-45deg);
+    position: absolute;
+    top: 23px;
+    left: 23px;
+    }
+    .mAngleTop {
+    height: 11px;
+    width: 0;
+    border-right: 3px solid #FEC700;
+    -moz-transform: skew(45deg);
+    -webkit-transform: skew(45deg);
+    transform: skew(45deg);
+    position: absolute;
+    top: 12px;
+    left: 23px;
+    }
+    .mLineLeft {
+    border-left: 1px solid #ED5F2C;
+    height: 30px;
+    position: absolute;
+    top: 8px;
+    left: -1px;
+    }
+    .trigger a:hover .linkBoxMediumRed .mArrowLink {
+    background-color: #FEC700;
+    }
+    .trigger a:hover .linkBoxMediumRed .mArrowLink .mAngleTop {
+    border-right: 3px solid #E7343F;
+    }
+    .trigger a:hover .linkBoxMediumRed .mArrowLink .mAngleBottom {
+    border-right: 3px solid #E7343F;
+    }
+    .trigger a:hover .linkBoxMediumRed .mArrowLink .mLineLeft  {
+    border-left: 1px solid #E7343F;
+    }
+
+
+/* use the following html 
+
+    <div class="trigger">
+        <a href="#">
+            <div class="linkBoxMediumRed">Find out more
+                <div class="mArrowLink">
+                    <div class="mLineLeft"></div>
+                    <div class="mAngleTop"></div>
+                    <div class="mAngleBottom"></div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+*/
